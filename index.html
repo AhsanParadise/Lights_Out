@@ -1,0 +1,106 @@
+<!---All in One [HTML, CSS, JS]-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lights out</title>
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(Dark.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        transition: 5s;
+        transform-origin: right;
+        transform: scaleX(1);
+        background-color: whitesmoke;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+        transition: 3s;
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+
+      .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: rgb(212, 158, 8);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin-left: 45%;
+        margin-right: auto;
+        display: block;
+        margin-top: 22%;
+        margin-bottom: 0%;
+      }
+
+      .button:hover {
+        background-color: #3e8e41;
+      }
+
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      footer {
+        width: 100%;
+        background-color: transparent;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 20px;
+
+        margin-top: 279px;
+      }
+
+      @media screen and (max-width: 1200px) {
+         .button {
+              margin-left: auto;
+              margin-right:auto;
+              margin-top: 280px;
+            
+         }
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+    <button class="button" onclick="myFunction()">Click here</button>
+    <footer>
+      Copyright © 2020 - All rights Reserved - Designed by AhsanParadise
+    </footer>
+
+
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+
+
+  </body>
+
+</html>
+
+<!---- T H A N K   Y O U ---->
